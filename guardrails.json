@@ -1,0 +1,42 @@
+{
+  "enabled": true,
+  "maxConsecutiveErrors": 8,
+  "warnSessionCostUsd": 25.0,
+  "maxSessionCostUsd": 100.0,
+  "dailyBudgetUsd": 200.0,
+  "loopDetection": {
+    "enabled": true,
+    "defaultWindow": 20,
+    "defaultMaxRepeats": 7,
+    "warnAtRepeats": 5,
+    "perTool": {
+      "edit": { "window": 30, "maxRepeats": 12, "warnAt": 8 },
+      "replace_content": { "window": 30, "maxRepeats": 12, "warnAt": 8 },
+      "replace_symbol_body": { "window": 30, "maxRepeats": 12, "warnAt": 8 },
+      "write": { "window": 20, "maxRepeats": 8, "warnAt": 5 },
+      "bash": { "window": 20, "maxRepeats": 8, "warnAt": 5 },
+      "read": { "window": 30, "maxRepeats": 20, "warnAt": 15 },
+      "read_file": { "window": 30, "maxRepeats": 20, "warnAt": 15 },
+      "glob": { "window": 25, "maxRepeats": 15, "warnAt": 10 },
+      "grep": { "window": 25, "maxRepeats": 15, "warnAt": 10 }
+    }
+  },
+  "progressAwareBudget": {
+    "enabled": true,
+    "costPerProgressUnit": 5.0,
+    "hardCap": 300.0,
+    "stallThresholdUsd": 15.0
+  },
+  "mode": {
+    "evo": {
+      "failMode": "closed",
+      "maxSessionCostUsd": 50.0,
+      "loopMultiplier": 0.7
+    },
+    "default": {
+      "failMode": "open",
+      "maxSessionCostUsd": 100.0,
+      "loopMultiplier": 1.0
+    }
+  }
+}
