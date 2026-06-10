@@ -1,0 +1,17 @@
+.opencode/
+.serena/
+.decisions/
+graphify-out/
+lazy-mcp-config.json
+lazy-mcp-hierarchy/
+opencode.json
+runtime-learnings.json
+learnings.yaml
+*.log
+*.trace
+*.jsonl
+*.env
+.env*
+*token*
+*secret*
+*credential*
